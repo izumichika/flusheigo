@@ -1,3 +1,192 @@
 * {
   box-sizing: border-box;
+  outline: none;
+}
+
+.header {
+  height: 100px;
+  width: 100vw;
+  background-size: 30px 30px;
+  margin: 0 auto;
+  background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
+                    radial-gradient(#FCFBCA 15%, transparent 20%);
+  background-position: 0 0, 15px 15px;
+  padding: 30px;
+  display: flex;
+  align-items     : center;
+  justify-content: center;
+  &__title {
+    font-size: 25px;
+    margin-right: 200px;
+  }
+  &__right {
+    height: 50px;
+    width: 240px;
+    display: flex;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    &__return {
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+    &__start {
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+    &__new {
+      margin-left: 20px;
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+  }
+}
+.body {
+  height: calc(100vh - 200px);
+  width: 100vw;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  background-color: #E6FFE9;
+  overflow: scroll;
+  &__problems {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    #timer {
+      color: gray;
+      width: 80px;
+      height: 80px;
+      font-size: 55px;
+      border-radius: 50%;
+      background: yellow;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__TestMain {
+      text-align: center;
+      font-size: 25px;
+    }
+    &__direction {
+      font-size: 23px;
+    }
+    &__problem {
+      height: 50px;
+      display: flex;
+      margin-top: 5px;
+      border: medium solid gray;
+      font-size: 25px;
+      background-color: white;
+      position: relative;
+      &__result {
+        position: absolute;
+        top:5px;
+        right: 10px;
+        &__rinput {
+          border: none;
+          background-color: transparent;
+        }
+      }
+      &__delete {
+        position: absolute;
+        left: -40px;
+        top:10px;
+        border-radius: 3px;
+        background-color: slategrey;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        width: 30px;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 10px;
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+        }
+      }
+      &__japanese {
+        line-height: 50px;
+        width: 200px;
+        text-align: center;
+        background-color: lightgray;
+        &__jinput {
+          border: none;
+          background-color: transparent;
+        }
+      }
+      &__english {
+        line-height: 50px;
+        margin-right: 10px;
+        margin-left: auto;
+        width: 200px;
+        text-align: center;
+        position: relative;
+        &__einput {
+          border: none;
+          background-color: transparent;
+        }
+        &__btn {
+          position: absolute;
+          right:-80px;
+          top:7px;
+
+          height: 30px;
+          width: 50px;
+          line-height: 30px;
+          border-radius: 3px;
+          background-color: slategrey;
+          font-size: 10px;
+          font-weight: bold;
+          &:hover {
+            background: gold;
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+.footer {
+  height: 100px;
+  width: 100vw;
+  background-size: 30px 30px;
+  margin: 0 auto;
+  background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
+                    radial-gradient(#FCFBCA 15%, transparent 20%);
+  background-position: 0 0, 15px 15px;
+  font-size: 50px;
+  text-align: center;
 }
