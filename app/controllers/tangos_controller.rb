@@ -1,0 +1,2 @@
+class TangosController < ApplicationController
+end
