@@ -1,0 +1,2 @@
+class Tango < ApplicationRecord
+end
