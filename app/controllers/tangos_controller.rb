@@ -5,9 +5,11 @@ class TangosController < ApplicationController
   end
 
   def new
+    @tango = Tango.new
   end
 
   def create
+    
   end
   
 end
