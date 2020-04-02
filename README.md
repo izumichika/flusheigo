@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### アプリ名 フラッシュ英語
 
-Things you may want to cover:
+IPアドレス 'http://3.115.133.232/'
 
-* Ruby version
+英語の学習を目的にこのアプリを作りました
 
-* System dependencies
+現段階で想定している機能は下記
+・単語登録、削除
+・単語フラッシュ（ランダム表示）
+・フラッシュカウントダウン
+・クイズ
+・クイズ正誤判定
+・ユーザー登録、変更、削除
+・ユーザー登録時にフラッシュ、カウントダウンの各種設定
+・間違えた単語をmy単語登録
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
