@@ -10,6 +10,7 @@ class TangosController < ApplicationController
 
   def create
     Tango.create(tango_params)
+    redirect_to "/"
   end
 
   def destroy
