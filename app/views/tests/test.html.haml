@@ -1,0 +1,6 @@
+=form_tag test_mark_path do 
+  -@quizzes.each do |quiz| 
+    =quiz.question
+    =hidden_field_tag "quiz[]", quiz.id
+    =text_field_tag "quiz#{quiz.id}"
+    =submit_tag "回答" 

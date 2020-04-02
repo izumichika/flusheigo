@@ -1,0 +1,4 @@
+-@answers.each do |answer| 
+  =answer[:quiz].question
+  =answer[:right] ? "正解" : "不正解" 
+  =answer[:quiz].right_answer 
