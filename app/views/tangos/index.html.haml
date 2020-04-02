@@ -2,7 +2,8 @@
   %h.header__title
     フラッシュ単語
   .header__right
-    -# .header__right__start
+    .header__right__start
+      =link_to "テスト", test_tango_tests_path(@tangos)
     -#   = link_to "フラッシュ", problem_path(@problems), { data: {id: "autorenew"}}
     .header__right__new
       = link_to new_tango_path do
