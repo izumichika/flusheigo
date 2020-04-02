@@ -1,11 +1,12 @@
 .header
   %h.header__title
-    Myフラッシュカード
+    フラッシュ単語
   .header__right
     -# .header__right__start
     -#   = link_to "フラッシュ", problem_path(@problems), { data: {id: "autorenew"}}
     .header__right__new
-      -# = link_to "カード作成", "/problems/new" 
+      = link_to new_tango_path do
+        単語登録
 .body
   .body__problems
     -# - @problems.each do |problem|
