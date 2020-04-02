@@ -12,12 +12,10 @@
 .body
   .body__problems
     .body__problems__problem
-      .body__problems__problem__japanese
-
-      .body__problems__problem__english
+      .body__problems__problem__quiz
+        -@ansers.each do |anser|
+          =anser[:quiz].question
+          =anser[:right] ? "正解" : "不正解"
+          =anser[:quiz].right_anser
 
 .footer
--# -@answers.each do |answer| 
--#   =answer[:quiz].question
--#   =answer[:right] ? "正解" : "不正解" 
--#   =answer[:quiz].right_answer 
