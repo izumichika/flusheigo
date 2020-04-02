@@ -12,7 +12,11 @@ class TangosController < ApplicationController
     Tango.create(tango_params)
   end
 
-  
+  def destroy
+    tango = Tango.find(params[:id])
+    tango.destroy
+    redirect_to "/"
+  end
   
   private
   def tango_params
