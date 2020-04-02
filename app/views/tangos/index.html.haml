@@ -9,12 +9,12 @@
         単語登録
 .body
   .body__problems
-    -# - @tangos.each do |tango|
+    - @tangos.each do |tango|
       .body__problems__problem
         .body__problems__problem__delete
-          -# = link_to "削除", "/problems/#{problem.id}", method: :delete
+          = link_to "削除", "/tangos/#{tangos.id}", method: :delete
         .body__problems__problem__japanese
-          -# = tango.question
+          = tango.question
         .body__problems__problem__english
-          -# = tango.anser
+          = tango.anser
 .footer
