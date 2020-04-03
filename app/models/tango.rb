@@ -1,7 +1,8 @@
 class Tango < ApplicationRecord
-  # attr_accessor :question, :right_anser
+  attr_accessor :left_question, :right_anser
 
-  # def right_anser?(reply)
-  #   return self.right_anser == reply
-  # end
+  def anser?(reply)
+    return self.anser == reply
+  end
+
 end
