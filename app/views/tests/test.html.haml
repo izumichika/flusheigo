@@ -6,7 +6,7 @@
       = link_to "一覧へ", "/"
 .body
   .body__problems
-    =form_tag mark_tango_tests_path do
+    =form_tag mark_tests_path do
       -@quizzes.each do |quiz|
         .body__problems__problem
           .body__problems__problem__japanese

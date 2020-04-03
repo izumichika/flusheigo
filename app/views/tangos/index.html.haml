@@ -3,7 +3,8 @@
     フラッシュ単語
   .header__right
     .header__right__start
-      =link_to "テスト", test_tango_tests_path(@tangos)
+      -# =link_to "テスト", test_tango_tests_path(@tangos)
+      =link_to "テスト", test_tests_path(@tangos)
     .header__right__flush
       = link_to "フラッシュ", tango_path(@tangos), { data: {id: "autorenew"}}
     .header__right__new
