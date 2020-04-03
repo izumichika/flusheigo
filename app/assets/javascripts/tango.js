@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $(window).bind("load", function(){
-    if(document.URL.match("/problems/%23")){
+    if(document.URL.match("/tangos/%23")){
       $(function(){
         cnt = 5;
         $('#timer').text(cnt);
