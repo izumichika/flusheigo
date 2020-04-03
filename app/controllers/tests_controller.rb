@@ -1,7 +1,7 @@
 class TestsController < ApplicationController
 
   def test
-    @quizzes = Tango.all.sample(1)
+    @quizzes = Tango.all.sample(2)
   end
 
   def mark

@@ -115,7 +115,7 @@
           background-color: transparent;
         }
       }
-      &__delete {
+      &__option {
         position: absolute;
         left: -40px;
         top:10px;
@@ -187,6 +187,6 @@
   background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
                     radial-gradient(#FCFBCA 15%, transparent 20%);
   background-position: 0 0, 15px 15px;
-  font-size: 50px;
+  font-size: 12px;
   text-align: center;
 }

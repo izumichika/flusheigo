@@ -6,12 +6,18 @@
       = link_to "一覧へ", "/"
 .body
   .body__problems
-    .body__problems__problem
-      .body__problems__problem__quiz
-        -@ansers.each do |anser|
+    -@ansers.each do |anser|
+      .body__problems__problem
+        .body__problems__problem__japanese
           =anser[:quiz].question
-          =anser[:right] ? "正解" : "不正解"
+        .body__problems__problem__english
           =anser[:quiz].anser
-          -# =anser[:quiz].right_anser
+        .body__problems__problem__option
+          =anser[:right] ? "正解" : "不正解"
+        -# -@ansers.each do |anser|
+        -#   =anser[:quiz].question
+        -#   =anser[:right] ? "正解" : "不正解"
+        -#   =anser[:quiz].anser
+
 
 .footer

@@ -1,6 +1,25 @@
-=form_tag mark_tango_tests_path do
-  -@quizzes.each do |quiz|
-    =quiz.question
-    =hidden_field_tag "quiz[]", quiz.id
-    =text_field_tag "quiz#{quiz.id}"
-  =submit_tag "回答"
+.header
+  %h.header__title
+    フラッシュ単語
+  .header__right
+    .header__right__start
+      = link_to "一覧へ", "/"
+.body
+  .body__problems
+    =form_tag mark_tango_tests_path do
+      -@quizzes.each do |quiz|
+        .body__problems__problem
+          .body__problems__problem__japanese
+            =quiz.question
+          .body__problems__problem__english
+            =hidden_field_tag  "quiz[]", quiz.id
+            =text_field_tag "quiz#{quiz.id}","", placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput"
+      .body__problems__problem__submit
+        =submit_tag "回答"
+        -# =form_tag mark_tango_tests_path do
+        -#   -@quizzes.each do |quiz|
+        -#     =quiz.question
+        -#     =hidden_field_tag "quiz[]", quiz.id
+        -#     =text_field_tag "quiz#{quiz.id}"
+        -#   =submit_tag "回答"
+.footer

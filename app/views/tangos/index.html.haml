@@ -12,10 +12,11 @@
   .body__problems
     - @tangos.each do |tango|
       .body__problems__problem
-        .body__problems__problem__delete
+        .body__problems__problem__option
           = link_to "削除", "/tangos/#{tango.id}", method: :delete
         .body__problems__problem__japanese
           = tango.question
         .body__problems__problem__english
           = tango.anser
 .footer
+  英単語問題集は「神戸大学石川慎一郎研究室 – 語彙研究 JEV (Junior High School Level English Vocabulary）1200」より作成
