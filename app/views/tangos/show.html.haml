@@ -1,0 +1,16 @@
+.header
+  %h.header__title
+    フラッシュ単語
+  .header__right
+    .header__right__start
+      = link_to "一覧", "/"
+.body
+  .body__problems
+    #timer 5
+    -@tangos.each do |tango|
+      .body__problems__problem
+        .body__problems__problem__japanese
+          =tango.question
+        .body__problems__problem__english
+          =tango.anser
+.footer
