@@ -16,10 +16,4 @@
             =text_field_tag "quiz#{quiz.id}","",autocomplete: 'off', placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput"
       .body__problems__problem__submit
         =submit_tag "回答"
-        -# =form_tag mark_tango_tests_path do
-        -#   -@quizzes.each do |quiz|
-        -#     =quiz.question
-        -#     =hidden_field_tag "quiz[]", quiz.id
-        -#     =text_field_tag "quiz#{quiz.id}"
-        -#   =submit_tag "回答"
 .footer

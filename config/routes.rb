@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
   root "tangos#index"
-  resources :tangos, only: [:index, :new, :create, :destroy] do
-    # collection do
-    #   get 'test', to: "tangos#test"
-    #   post 'mark', to: "tangos#mark"
-    # end
+  resources :tangos, only: [:index, :new, :create, :destroy, :show] do
     resources :tests, only: [:index] do
       collection do
         get 'test', to: "tests#test"
