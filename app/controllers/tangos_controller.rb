@@ -18,7 +18,10 @@ class TangosController < ApplicationController
     tango.destroy
     redirect_to "/"
   end
-
+  
+  def show
+    @tangos = Tango.all.sample(5)
+  end
   private
   def tango_params
     params.require(:tango).permit(:question, :anser, :result)
