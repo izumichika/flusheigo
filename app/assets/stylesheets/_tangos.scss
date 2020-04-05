@@ -149,6 +149,19 @@
           display: block;
         }
       }
+      &__result {
+        position: absolute;
+        left: -40px;
+        top:10px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        width: 30px;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
       &__japanese {
         line-height: 50px;
         width: 200px;

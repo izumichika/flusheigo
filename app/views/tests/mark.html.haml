@@ -12,8 +12,9 @@
           =anser[:quiz].question
         .body__problems__problem__english
           =anser[:quiz].anser
-        .body__problems__problem__option
-          =anser[:right] ? "正解" : "不正解"
+        .body__problems__problem__result
+          -# -x = "#{icon("fas", "star")}"
+          =anser[:right] ? "💮 " : "× "
         -# -@ansers.each do |anser|
         -#   =anser[:quiz].question
         -#   =anser[:right] ? "正解" : "不正解"
