@@ -8,9 +8,11 @@
   width: 100vw;
   background-size: 30px 30px;
   margin: 0 auto;
-  background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
-                    radial-gradient(#FCFBCA 15%, transparent 20%);
-  background-position: 0 0, 15px 15px;
+  background-image: image-url('chizu.jpg');
+  background-size: 100%;
+  // background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
+  //                   radial-gradient(#FCFBCA 15%, transparent 20%);
+  // background-position: 0 0, 15px 15px;
   padding: 30px;
   display: flex;
   align-items     : center;
@@ -82,26 +84,32 @@
   }
 }
 .body {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 150px);
   width: 100vw;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 10px;
-  background-color: #E6FFE9;
+  padding-bottom: 20px;
+  background-image: image-url('libra.jpg');
+  background-size: 100%;
   overflow: scroll;
   &__problems {
-    width: 400px;
+    background-color: white;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     #timer {
-      color: gray;
-      width: 80px;
-      height: 80px;
-      font-size: 55px;
+      color: white;
+      width: 50px;
+      height: 50px;
+      font-size: 35px;
       border-radius: 50%;
-      background: yellow;
+      background:#996633;
       text-align: center;
-      margin-left: auto;
+      margin-top: 5px;
+      margin-left: 10px;
       margin-right: auto;
     }
     &__TestMain {
@@ -112,46 +120,43 @@
       font-size: 23px;
     }
     &__problem {
-      height: 50px;
+      height: 35px;
       display: flex;
       margin-top: 5px;
-      border: medium solid gray;
-      font-size: 25px;
+      font-size: 15px;
       background-color: white;
+      border-radius: 20px;
       position: relative;
-      &__result {
-        position: absolute;
-        top:5px;
-        right: 10px;
-        &__rinput {
-          border: none;
-          background-color: transparent;
-        }
-      }
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-top: -5px;
+      line-height: 30px;
+      background: -webkit-linear-gradient(bottom, #000 1px, rgba(255, 255, 255, 0) 1px) left top / 1px 35px;
+      background: linear-gradient(to top, #000 1px, rgba(255, 255, 255, 0) 1px) left top / 1px 35px;
       &__option {
         position: absolute;
         left: -40px;
         top:10px;
         border-radius: 3px;
-        background-color: slategrey;
         height: 20px;
         line-height: 20px;
         text-align: center;
         width: 30px;
         font-size: 10px;
-        font-weight: bold;
         margin-top: auto;
         margin-bottom: auto;
-        font-size: 10px;
         a {
           text-decoration: none;
           color: white;
           display: block;
+          &:hover {
+            background: lightgray;
+          }
         }
       }
       &__result {
         position: absolute;
-        left: -40px;
+        left: 20px;
         top:10px;
         height: 20px;
         line-height: 20px;
@@ -163,16 +168,17 @@
         margin-bottom: auto;
       }
       &__japanese {
+        font-family: "游ゴシック","arial unicode ms",sans-serif;
         line-height: 50px;
         width: 200px;
         text-align: center;
-        background-color: lightgray;
         &__jinput {
           border: none;
           background-color: transparent;
         }
       }
       &__english {
+        font-family: "游ゴシック","arial unicode ms",sans-serif;
         line-height: 50px;
         margin-right: 10px;
         margin-left: auto;
@@ -187,7 +193,6 @@
           position: absolute;
           right:-80px;
           top:7px;
-
           height: 30px;
           width: 50px;
           line-height: 30px;
@@ -200,19 +205,16 @@
           }
         }
       }
-      
     }
   }
 }
-
 .footer {
-  height: 100px;
+  height: 50px;
   width: 100vw;
   background-size: 30px 30px;
   margin: 0 auto;
-  background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
-                    radial-gradient(#FCFBCA 15%, transparent 20%);
-  background-position: 0 0, 15px 15px;
+  background-image: image-url('chizu.jpg');
+  background-size: 100%;
   font-size: 12px;
   text-align: center;
 }

@@ -15,5 +15,5 @@
             =hidden_field_tag  "quiz[]", quiz.id
             =text_field_tag "quiz#{quiz.id}","",autocomplete: 'off', placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput"
       .body__problems__problem__submit
-        =submit_tag "回答"
+        =submit_tag "回答", class: "btn"
 .footer
