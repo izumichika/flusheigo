@@ -3,13 +3,14 @@
     フラッシュ単語
   .header__right
     .header__right__start
-      -# =link_to "テスト", test_tango_tests_path(@tangos)
       =link_to "テスト", test_tests_path(@tangos)
     .header__right__flush
       = link_to "フラッシュ", tango_path(@tangos), { data: {id: "autorenew"}}
     .header__right__new
       = link_to new_tango_path do
         単語登録
+    .header__right__drill
+      = link_to "ドリル", drilltest_tangos_path
 .body
   .body__problems
     - @tangos.each do |tango|

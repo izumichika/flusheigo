@@ -22,6 +22,18 @@ class TangosController < ApplicationController
   def show
     @tangos = Tango.all.sample(5)
   end
+
+  def drilltest
+    @quizzes = Drill1.all.sample(10)
+  end
+
+  def drillmark
+    quizzes = Drill1.find(params[:quiz])
+    @ansers = []
+    quizzes.each do |q|
+      @ansers << {quiz: q, right: q.anser?(params["quiz#{q.id}"])}
+    end
+  end
   private
   def tango_params
     params.require(:tango).permit(:question, :anser, :result)

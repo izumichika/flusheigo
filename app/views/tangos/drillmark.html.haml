@@ -1,0 +1,17 @@
+.header
+  %h.header__title
+    フラッシュ単語
+  .header__right
+    .header__right__start
+      = link_to "一覧へ", "/"
+.body
+  .body__problems
+    -@ansers.each do |anser|
+      .body__problems__problem
+        .body__problems__problem__japanese
+          =anser[:quiz].question
+        .body__problems__problem__english
+          =anser[:quiz].anser
+        .body__problems__problem__result
+          =anser[:right] ? " 💮" : "×"
+.footer

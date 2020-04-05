@@ -10,9 +10,6 @@
   margin: 0 auto;
   background-image: image-url('chizu.jpg');
   background-size: 100%;
-  // background-image: radial-gradient(#C6E6FB 15%, transparent 20%),
-  //                   radial-gradient(#FCFBCA 15%, transparent 20%);
-  // background-position: 0 0, 15px 15px;
   padding: 30px;
   display: flex;
   align-items     : center;
@@ -23,7 +20,7 @@
   }
   &__right {
     height: 50px;
-    width: 240px;
+    width: 400px;
     display: flex;
     text-align: center;
     a {
@@ -69,6 +66,19 @@
       }
     }
     &__new {
+      margin-left: 20px;
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+    &__drill {
       margin-left: 20px;
       height: 50px;
       width: 100px;
