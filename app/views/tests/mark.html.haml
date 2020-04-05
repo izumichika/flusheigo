@@ -12,12 +12,6 @@
           =anser[:quiz].question
         .body__problems__problem__english
           =anser[:quiz].anser
-        .body__problems__problem__option
-          =anser[:right] ? "正解" : "不正解"
-        -# -@ansers.each do |anser|
-        -#   =anser[:quiz].question
-        -#   =anser[:right] ? "正解" : "不正解"
-        -#   =anser[:quiz].anser
-
-
+        .body__problems__problem__result
+          =anser[:right] ? " 💮" : "×"
 .footer

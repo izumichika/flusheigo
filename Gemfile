@@ -71,10 +71,9 @@ gem 'sprockets', '3.7.2'
 gem 'devise'
 gem 'haml-rails'
 gem 'font-awesome-sass'
-gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'erb2haml'
-
+gem 'active_hash'
 
 group :production do
   gem 'unicorn', '5.4.1'
