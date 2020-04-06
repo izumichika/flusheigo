@@ -24,6 +24,6 @@ class Drill1 < ActiveHash::Base
     {id: 43, question: 'まだ', anser: 'still'},{id: 44, question: '最後', anser: 'last'},
     {id: 45, question: '長い', anser: 'long'},{id: 46, question: '~の間', anser: 'between'},
     {id: 47, question: '少しの', anser: 'little'},{id: 48, question: '~を尋ねる', anser: 'ask'},
-    {id: 49, question: '~を感じる', anser: 'feel'},{id: 50, question: '家', anser: 'home'},
+    {id: 49, question: '~を感じる', anser: 'feel'},{id: 50, question: '家', anser: 'home'}
   ]
 end

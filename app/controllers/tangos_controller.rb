@@ -24,7 +24,7 @@ class TangosController < ApplicationController
   end
 
   def drilltest
-    @quizzes = Drill1.all.sample(10)
+    @quizzes = Drill1.all
   end
 
   def drillmark
