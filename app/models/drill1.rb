@@ -1,4 +1,9 @@
 class Drill1 < ActiveHash::Base
+
+  def anser?(reply)
+    return self.anser == reply
+  end
+
   self.data = [
     {id: 1, question: 'その~', anser: 'the'},{id: 2, question: '~の', anser: 'of'},
     {id: 3, question: '~を持つ', anser: 'have'},{id: 4, question: 'あなた', anser: 'you'},

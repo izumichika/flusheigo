@@ -6,5 +6,9 @@ class Tango < ApplicationRecord
   def anser?(reply)
     return self.anser == reply
   end
+
+  # def correct?(reply)
+  #   return self.anser == reply
+  # end
   
 end
