@@ -19,11 +19,11 @@ http://3.115.133.232/
 
 ### 各種機能＆導入技術
 - 基本機能
-  - 登録
-  - 削除
-  - 正誤判定（Ruby)
+  - 登録、削除
+  - ドリル(active_hash)
+  - 正誤判定
   - フラッシュ
-    - カウントダウン(JQuery)
+    - カウントダウン、自動更新(JQuery)
 - マークアップ(haml,scss)
 - プラットフォーム（AWS）
 - 自動デプロイ(capistrano)
@@ -31,7 +31,7 @@ http://3.115.133.232/
 ### 各種機能の動作
 
 - 単語登録<br>
-![単語登録](https://user-images.githubusercontent.com/61169243/78620236-64495880-78ba-11ea-98a2-b8c35ad8eb66.gif)
+![単語登録](https://user-images.githubusercontent.com/61169243/78985484-e4461b80-7b63-11ea-8c92-9a1e3faac254.gif)
 <br>
 
 - 単語テスト 自身が登録した英単語をテストできます<br>
