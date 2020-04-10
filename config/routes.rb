@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root "tangos#index"
+  resources :toppage, only: :index
   resources :tangos, only: [:index, :create, :destroy, :show] do
     collection do
       get 'drilltest', to: "tangos#drilltest"
