@@ -1,10 +1,27 @@
 .header
   %h.header__title
-    マイ英単語
+    MY英単語
   .header__right
-
+    ログイン
 .body
-  .body__problems
+  .body__main
+    %h1 MY英単語とは？
+    %p もっと英語の勉強をとっかかりやすく！をテーマに学生時代にあったらよかったなと思う機能を盛り込みました！
+  .body__newRegister
+    さっそく登録して機能を追加しよう！<br>
+    新規登録
+  .body__description
+    .body__description__contents
+      英単語ドリル
+      =link_to "/" do
+        お試しでドリルをやってみよう！
+    .body__description__contents
+      わからない英単語をMY単語に登録
+    .body__description__contents
+      登録した単語はフラッシュで覚えよう！
+    .body__description__contents
+      登録したMY単語をテストで確認
+      -# .body__description__afterRegister__seach
 
 
 .footer
