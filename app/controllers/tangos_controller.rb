@@ -2,15 +2,13 @@ class TangosController < ApplicationController
 
   def index
     @tangos = Tango.all
-  end
-
-  def new
     @tango = Tango.new
   end
 
   def create
-    Tango.create(tango_params)
-    redirect_to "/"
+    @tangos = Tango.create(tango_params)
+    # Tango.create(tango_params)
+    # redirect_to "/"
   end
 
   def destroy
