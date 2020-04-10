@@ -6,14 +6,11 @@
       =link_to "テスト", test_tests_path(@tangos)
     .header__right__flush
       = link_to "フラッシュ", tango_path(@tangos), { data: {id: "autorenew"}}
-    -# .header__right__new
-    -#   = link_to new_tango_path do
-    -#     単語登録
     .header__right__drill
       = link_to "ドリル", drilltest_tangos_path
 .body
   .body__problems
-    .body__problems__direction
+    %h.body__problems__direction
       My単語を登録
       = form_with(model: @tango, local: true) do |form|
         .body__problems__problem

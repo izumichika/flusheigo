@@ -8,7 +8,7 @@ class TangosController < ApplicationController
   def create
     @tangos = Tango.create(tango_params)
     # Tango.create(tango_params)
-    # redirect_to "/"
+    redirect_to "/"
   end
 
   def destroy

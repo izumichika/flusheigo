@@ -15,8 +15,7 @@
   align-items     : center;
   justify-content: center;
   &__title {
-    font-size: 25px;
-    // background-color: crimson;
+    font-size: 20px;
     margin-right: 20px;
   }
   &__right {
@@ -119,7 +118,7 @@
     }
     &__direction {
       font-size: 20px;
-      background-color: darkgoldenrod;
+      padding-left: 10px;
     }
     &__problem {
       height: 35px;
