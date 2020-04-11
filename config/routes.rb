@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
-  # devise_for :users, :controllers => {
-  #   :registrations => 'users/registrations',
-  #   :sessions => 'users/sessions'   
-  # } 
   unauthenticated do
     as :user do
       root :to => 'devise/registrations#new'
     end
   end
-  # root "devise#index"
+  root "users#show"
+  resources :users, only: [:show]
   resources :tangos, only: [:index, :create, :destroy, :show] do
     collection do
       get 'drilltest', to: "tangos#drilltest"

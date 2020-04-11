@@ -1,0 +1,21 @@
+.header
+  %h.header__title
+    MY単語
+.body
+  .body__mypage
+    .body__mypage__left
+      .body__mypage__left__contents
+        %p フラッシュ
+      .body__mypage__left__contents
+        %p テスト
+      .body__mypage__left__contents
+        = link_to "ドリル", drilltest_tangos_path
+      .body__mypage__left__contents
+        %p ユーザー情報
+      .body__mypage__left__contents
+        =link_to destroy_user_session_path, method: :delete do
+          ="ログアウト"
+    .body__mypage__right
+      .body__mypage__right__contents
+
+.footer
