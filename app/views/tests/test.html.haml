@@ -6,6 +6,8 @@
       = link_to "一覧へ", "/"
 .body
   .body__problems
+    .body__problems__problem
+      %h 単語テスト わからない単語を復習しよう！
     =form_tag mark_tests_path do
       -@quizzes.each do |quiz|
         .body__problems__problem
