@@ -1,7 +1,7 @@
 class TangosController < ApplicationController
 
   def index
-    @tangos = Tango.all
+    @tangos = Tango.all.order(id: "DESC")
     @tango = Tango.new
   end
 

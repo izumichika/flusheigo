@@ -6,6 +6,8 @@
       = link_to "一覧へ", "/"
 .body
   .body__problems
+    .body__problems__problem
+      %h 単語ドリル レベル１ 50問の英単語にチャレンジ！
     =form_tag drillmark_tangos_path do
       -@quizzes.each do |quiz|
         .body__problems__problem

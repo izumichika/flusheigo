@@ -1,0 +1,39 @@
+.header
+  %h.header__title
+    MY英単語
+  .header__right
+    .header__right__start
+      ログイン
+.body
+  .body__main
+    %h1 MY英単語とは？
+    %p もっと英語の勉強をとっかかりやすく！をテーマに作成した英単語学習WEBアプリです<br>
+    %p 学生時代にあったらよかったなと思う機能を盛り込みました！
+  .body__newRegister
+    さっそく登録して機能を追加しよう！<br>
+    新規登録
+  .body__description
+    .body__description__contents--drill
+      =link_to drilltest_tangos_path do
+        %p2 英単語ドリルお試しでドリルにTRY！
+        .body__description__contents__gif
+          = image_tag '/drill.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
+    .body__description__contents
+      わからない英単語をMY単語に登録
+      .body__description__contents__gif
+        = image_tag '/newtango.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
+    .body__description__contents
+      登録した単語はフラッシュで覚えよう！
+      .body__description__contents__gif
+        = image_tag '/flush.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
+    .body__description__contents
+      登録したMY単語をテストで確認
+      .body__description__contents__gif
+        = image_tag '/test.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
+    .body__description__contents
+      And more ...
+      .body__description__contents__gif
+
+
+.footer
+  英単語問題集は「神戸大学石川慎一郎研究室 – 語彙研究 JEV (Junior High School Level English Vocabulary）1200」より作成
