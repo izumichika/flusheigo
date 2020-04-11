@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  # root "tangos#index"
-  root to: "toppage#index"
+  unauthenticated do
+    as :user do
+      root :to => 'devise/registrations#new'
+    end
+  end
   resources :toppage, only: :index
   resources :tangos, only: [:index, :create, :destroy, :show] do
     collection do
