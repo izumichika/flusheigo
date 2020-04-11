@@ -14,16 +14,61 @@
   line-height: 1.9;
   h1 {
     font-weight: bold;
-
   }
 }
 .body__newRegister {
-  height: 150px;
   width: 100%;
   color: white;
   text-align: center;
+  padding-top: 10px;
+  height: 250px;
+  h1 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  &__form {
+    display: inline-block;
+    justify-content: center;
+    height: 200px;
+    &__field {
+      line-height: 100px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      &__input {
+        height: 50px;
+        width: 300px;
+      }
+      &__action {
+        text-align: center;
+        height: 30px;
+        width: 150px;
+        .button {
+          line-height: 30px;
+          display       : inline-block;
+          border-radius : 5%; 
+          font-size     : 18pt;  
+          text-align    : center;
+          cursor        : pointer;  
+          padding       : 6px 6px; 
+          color         : #ffffff; 
+          background-color: #3CCACE;
+          line-height   : 1em;   
+          transition    : .3s;   
+          box-shadow    : 6px 6px 3px #666666;
+        }
+        .button:hover {
+          box-shadow    : none;  
+          color         : #000066;  
+          background    : #ffffff;  
+        }
+      }
+    }
+  }
 }
 .body__description {
+  padding-top: 30px;
   width: 100%;
   color: white;
   display: flex;

@@ -3,7 +3,7 @@
     MY英単語
   .header__right
     .header__right__start
-      ログイン
+      = render "devise/shared/links"
 .body
   .body__main
     %h1 MY英単語とは？
@@ -12,6 +12,18 @@
   .body__newRegister
     %h1 さっそく登録して機能を追加しよう！<br>
     .body__newRegister__form
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        .body__newRegister__form__field
+          = render "devise/shared/error_messages", resource: resource
+        .body__newRegister__form__field
+          .body__newRegister__form__field__input
+            = f.email_field :email, autofocus: true, autocomplete: "email",style: "width:300px; height:40px;", placeholder: "メールアドレス"
+          .body__newRegister__form__field__input
+            = f.password_field :password, autocomplete: "new-password",style: "width:300px; height:40px;", placeholder: "パスワード"
+          .body__newRegister__form__field__input
+            = f.password_field :password_confirmation, autocomplete: "new-password",style: "width:300px; height:40px;", placeholder: "再入力"
+          .body__newRegister__form__field__action
+            = f.submit "新規登録", class: 'button'
 
   .body__description
     .body__description__contents--drill
