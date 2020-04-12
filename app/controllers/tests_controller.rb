@@ -1,7 +1,7 @@
 class TestsController < ApplicationController
 
   def test
-    @quizzes = Tango.all.sample(10)
+    @quizzes = Tango.where(user_id: current_user.id).sample(10)
   end
 
   def mark
