@@ -7,12 +7,24 @@ Rails.application.routes.draw do
   end
   root "users#show"
   resources :users, only: [:show] 
-  resources :tangos, only: [:index, :create, :destroy, :show] do
-    collection do
-      get 'drilltest', to: "tangos#drilltest"
-      post 'drillmark', to: "tangos#drillmark"
+  # resources :tangos, only: [:index, :create, :destroy, :show] do
+  #   collection do
+  #     get 'drilltest', to: "tangos#drilltest"
+  #     post 'drillmark', to: "tangos#drillmark"
+  #   end
+  # end
+  controller :tangos do
+    resources :tangos, only: [:index, :create, :destroy] do
+      collection do
+        get 'drilltest', to: "tangos#drilltest"
+        post 'drillmark', to: "tangos#drillmark"
+      end
+    end
+    scope path: 'flush' do
+      get 'flush_tangos', action: :show
     end
   end
+
   resources :tests, only: [:index] do
     collection do
       get 'test', to: "tests#test"

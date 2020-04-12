@@ -5,7 +5,8 @@
   .body__mypage
     .body__mypage__left
       .body__mypage__left__contents
-        = link_to "フラッシュ", tango_path(current_user)
+        = link_to "フラッシュ", flush_tangos_path(current_user)
+        -# = link_to "フラッシュ", tango_path(current_user)
       .body__mypage__left__contents
         = link_to "テスト", test_tests_path(current_user)
       .body__mypage__left__contents

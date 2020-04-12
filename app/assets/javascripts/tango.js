@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $(window).bind("load", function(){
-    if(document.URL.match("/tangos/1")){
+    if(document.URL.match("/flush/flush_tangos.")){
       $(function(){
         cnt = 5;
         $('#timer').text(cnt);
