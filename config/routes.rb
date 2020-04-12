@@ -6,18 +6,17 @@ Rails.application.routes.draw do
     end
   end
   root "users#show"
-  resources :users, only: [:show] do
-    resources :tangos, only: [:index, :create, :destroy, :show] do
-      collection do
-        get 'drilltest', to: "tangos#drilltest"
-        post 'drillmark', to: "tangos#drillmark"
-      end
+  resources :users, only: [:show] 
+  resources :tangos, only: [:index, :create, :destroy, :show] do
+    collection do
+      get 'drilltest', to: "tangos#drilltest"
+      post 'drillmark', to: "tangos#drillmark"
     end
-    resources :tests, only: [:index] do
-      collection do
-        get 'test', to: "tests#test"
-        post 'mark', to: "tests#mark"
-      end
+  end
+  resources :tests, only: [:index] do
+    collection do
+      get 'test', to: "tests#test"
+      post 'mark', to: "tests#mark"
     end
   end
 end
