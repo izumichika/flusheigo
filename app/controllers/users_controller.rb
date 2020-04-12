@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def show
-    @tangos = Tango.all.order(id: "DESC")
+    @tangos = Tango.where(user_id: current_user.id).order(id: "DESC")
     @tango = Tango.new
   end
 

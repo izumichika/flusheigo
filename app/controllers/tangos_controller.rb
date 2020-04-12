@@ -18,7 +18,8 @@ class TangosController < ApplicationController
   end
   
   def show
-    @tangos = Tango.all.sample(5)
+    # @tangos = Tango.all.sample(5)
+    @tangos = Tango.where(user_id: current_user.id).sample(5)
   end
 
   def drilltest
@@ -34,6 +35,6 @@ class TangosController < ApplicationController
   end
   private
   def tango_params
-    params.require(:tango).permit(:question, :anser, :result)
+    params.require(:tango).permit(:question, :anser, :result).merge(user_id: current_user.id)
   end
 end
