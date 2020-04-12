@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_04_11_030822) do
   create_table "tangos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "question", null: false
     t.string "anser", null: false
-    t.string "result"
+    t.string "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

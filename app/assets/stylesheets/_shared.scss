@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.header {
+  height: 100px;
+  width: 100vw;
+  background-size: 30px 30px;
+  margin: 0 auto;
+  background-image: image-url('chizu.jpg');
+  background-size: 100%;
+  padding: 30px;
+  display: flex;
+  align-items     : center;
+  justify-content: center;
+  &__title {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  &__right {
+    height: 50px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    &__return {
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+    &__start {
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+    &__flush {
+      margin-left: 20px;
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+    &__drill {
+      margin-left: 20px;
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
+  }
+}
