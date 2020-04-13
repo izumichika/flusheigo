@@ -31,16 +31,16 @@ http://3.115.133.232/
 
 ### 各種機能の動作
 
-- 単語登録<br>
-![単語登録](https://user-images.githubusercontent.com/61169243/78985484-e4461b80-7b63-11ea-8c92-9a1e3faac254.gif)
+- 単語登録・削除<br>
+![MY単語登録](https://user-images.githubusercontent.com/61169243/79117005-db07b980-7dc4-11ea-89fa-df85ca4c5b2a.gif)
 <br>
 
 - 単語テスト 自身が登録した英単語をテストできます<br>
-![単語テスト](https://user-images.githubusercontent.com/61169243/78620494-1ed95b00-78bb-11ea-814f-bad366408aab.gif)
+![単語テスト](https://user-images.githubusercontent.com/61169243/79117007-df33d700-7dc4-11ea-827f-3156fe654fbf.gif)
 <br>
 
 - 単語フラッシュ 自身が登録した単語が５秒ごとに５個ずつランダムに表示されます<br>
-![フラッシュ機能](https://user-images.githubusercontent.com/61169243/78620504-24cf3c00-78bb-11ea-93e1-0bbbb38a2514.gif)
+![フラッシュ](https://user-images.githubusercontent.com/61169243/79117017-e65ae500-7dc4-11ea-9a7c-d13d3dedfc1f.gif)
 <br>
 
 - 単語ドリル 英単語の問題集にチャレンジできます<br>
