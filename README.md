@@ -44,5 +44,5 @@ http://3.115.133.232/
 <br>
 
 - 単語ドリル 英単語の問題集にチャレンジできます<br>
-![単語ドリル](https://user-images.githubusercontent.com/61169243/78620646-8b545a00-78bb-11ea-924c-e14028d4f442.gif)
+![ドリル](https://user-images.githubusercontent.com/61169243/79117448-18207b80-7dc6-11ea-968b-383cdefb1ea7.gif)
 <br>
