@@ -1,9 +1,4 @@
-.header
-  %h.header__title
-    フラッシュ単語
-  .header__right
-    .header__right__start
-      = link_to "マイページ", "/"
+= render "shared/header"
 .body
   .body__problems
     -@ansers.each do |anser|

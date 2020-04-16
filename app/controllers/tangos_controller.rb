@@ -1,13 +1,7 @@
 class TangosController < ApplicationController
 
-  def index
-    @tangos = Tango.all.order(id: "DESC").page(params[:page]).per(10)
-    @tango = Tango.new
-  end
-
   def create
     @tangos = Tango.create(tango_params)
-    # Tango.create(tango_params)
     redirect_to "/"
   end
 
@@ -18,7 +12,6 @@ class TangosController < ApplicationController
   end
   
   def show
-    # @tangos = Tango.all.sample(5)
     @tangos = Tango.where(user_id: current_user.id).sample(5)
   end
 

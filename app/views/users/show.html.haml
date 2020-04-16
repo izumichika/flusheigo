@@ -6,13 +6,10 @@
     .body__mypage__left
       .body__mypage__left__contents
         = link_to "フラッシュ", flush_tangos_path(current_user)
-        -# = link_to "フラッシュ", tango_path(current_user)
       .body__mypage__left__contents
         = link_to "テスト", test_tests_path(current_user)
       .body__mypage__left__contents
         = link_to "ドリル", drilltest_tangos_path(current_user)
-      -# .body__mypage__left__contents
-      -#   %p ユーザー情報
       .body__mypage__left__contents
         =link_to destroy_user_session_path, method: :delete do
           ="ログアウト"
@@ -37,7 +34,6 @@
               .body__mypage__right__contents__problems__problem__english
                 = tango.anser
           .body__mypage__right__contents__problems
-            -# 見えてる？
             = paginate @tangos
             = page_entries_info @tangos
 .footer
