@@ -26,6 +26,7 @@ http://3.115.133.232/
 - マークアップ(haml,scss)
 - ユーザー管理（devise)
 - マークアップ(haml,scss)
+- テスト（RSpec)
 - プラットフォーム（AWS）
 - 自動デプロイ(capistrano)
 
