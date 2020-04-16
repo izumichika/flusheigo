@@ -25,6 +25,7 @@ http://3.115.133.232/
     - カウントダウン、自動更新(JQuery)
 - マークアップ(haml,scss)
 - ユーザー管理（devise)
+- ページネーション(kaminari)
 - マークアップ(haml,scss)
 - テスト（RSpec)
 - プラットフォーム（AWS）
