@@ -12,6 +12,6 @@ class Tango < ApplicationRecord
   # def correct?(reply)
   #   return self.anser == reply
   # end
-  validates :anser, presence: true
-  validates :question, presence: true, format: {with: /\A[ぁ-んァ-ン一-龥]/, message: 'は全角で入力してください'}
+  validates :anser, presence: true, format: {with: /\A[a-z0-9]+\z/, message: 'は半角アルファベットで入力してください'}
+  validates :question, presence: true
 end

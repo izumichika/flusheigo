@@ -77,6 +77,7 @@ gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'erb2haml'
 gem 'active_hash'
+gem 'kaminari'
 
 group :production do
   gem 'unicorn', '5.4.1'

@@ -1,7 +1,7 @@
 class TangosController < ApplicationController
 
   def index
-    @tangos = Tango.all.order(id: "DESC")
+    @tangos = Tango.all.order(id: "DESC").page(params[:page]).per(10)
     @tango = Tango.new
   end
 
