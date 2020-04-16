@@ -1,9 +1,12 @@
 @import "shared/reset";
+@import "shared/header";
+@import "shared/footer";
+@import "shared/body";
+@import "toppage/description";
+@import "toppage/login";
+@import "toppage/main";
+@import "toppage/newRegister";
+@import 'user/mypage';
 @import "tangos";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
-@import 'toppage';
-@import 'shared/header';
-@import "shared/footer";
-@import "shared/body";
-@import 'users';
