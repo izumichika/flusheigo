@@ -13,13 +13,15 @@ describe '単語管理機能', type: :system do
     click_button 'ログイン'
   end
 
+  shared_examples_for 'ユーザーAが作成した単語が表示される' do
+    it { expect(page).to have_content '確認' }
+  end
+
   describe '単語表示機能' do
     context 'ユーザーAがログインしているとき' do
       let(:login_user) { user_a }
 
-      it 'ユーザーAが作成した単語が表示される' do
-        expect(page).to have_content '確認'
-      end
+      it_behaves_like 'ユーザーAが作成した単語が表示される'
     end
 
     context 'ユーザーBがログインしているとき' do
@@ -39,9 +41,8 @@ describe '単語管理機能', type: :system do
         visit flush_tangos_path(tango_a)
       end
 
-      it 'ユーザーAが作成したタスクが表示される' do
-        expect(page).to have_content '確認'
-      end
+      it_behaves_like 'ユーザーAが作成した単語が表示される'
     end
   end
+
 end
