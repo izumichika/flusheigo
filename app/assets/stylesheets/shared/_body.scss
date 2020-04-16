@@ -1,0 +1,10 @@
+.body {
+  height: calc(100vh - 50px);
+  width: 100vw;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-image: image-url('libra.jpg');
+  background-size: 100%;
+  overflow: scroll;
+}

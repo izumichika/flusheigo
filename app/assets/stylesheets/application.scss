@@ -1,7 +1,9 @@
-@import "reset";
+@import "shared/reset";
 @import "tangos";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import 'toppage';
-@import 'shared';
+@import 'shared/header';
+@import "shared/footer";
+@import "shared/body";
 @import 'users';
