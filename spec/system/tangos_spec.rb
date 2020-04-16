@@ -6,7 +6,7 @@ describe '単語管理機能' type: :system do
       #ユーザーAを作成しておく
       user_a = FactoryBot.create(:user, name: 'ユーザーA', email: 'a@example.com')
       #作成者がユーザーAである単語を作成しておく
-      
+      FactoryBot.create(:tango, question: '確認', anser: 'check', user: user_a)
     end
 
     context 'ユーザーAがログインしているとき' do
