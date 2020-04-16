@@ -45,4 +45,28 @@ describe '単語管理機能', type: :system do
     end
   end
 
+  describe '新規作成機能' do
+    let(:login_user) { user_a }
+
+    before do
+      visit tangos_path
+      fill_in "jinput", with: tango_question
+      click_button '作成'
+    end
+
+    context '新規フォームで問いを入力したとき' do
+      let(:tango_question) { 'テスト' }
+
+      it_behaves_like 'ユーザーAが作成した単語が表示される'
+    end
+
+    context '新規フォームで問いを入力しなかったとき' do
+      let(:tango_question) { '' }
+
+      it '何も登録されずリダイレクト' do
+        visit tangos_path
+      end
+    end
+  end
+
 end
