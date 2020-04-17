@@ -78,6 +78,7 @@ gem 'jquery-rails'
 gem 'erb2haml'
 gem 'active_hash'
 gem 'kaminari'
+gem 'ransack'
 
 group :production do
   gem 'unicorn', '5.4.1'
