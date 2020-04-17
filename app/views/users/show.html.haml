@@ -16,6 +16,11 @@
     .body__mypage__right
       .body__mypage__right__contents
         .body__mypage__right__contents__problems
+          .body__mypage__right__contents__problems__search
+            = search_form_for @q, url:root_path do |f|
+              = f.label :anser_cont, '答え'
+              = f.search_field :anser_cont
+              = f.submit "検索"
           %h.body__mypage__right__contents__problems__direction
             My単語を登録
             = form_with(model: @tango, local: true) do |form|
@@ -36,4 +41,3 @@
           .body__mypage__right__contents__problems
             = paginate @tangos
             = page_entries_info @tangos
-.footer

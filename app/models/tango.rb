@@ -4,6 +4,8 @@ class Tango < ApplicationRecord
   belongs_to_active_hash :drill1
   
   belongs_to :user
+
+  scope :recent, -> { order(created_at: :desc)}
   
   def anser?(reply)
     return self.anser == reply
