@@ -1,10 +1,14 @@
 .body
-  .body__problems
-    #timer 5
-    -@tangos.each do |tango|
-      .body__problems__problem
-        .body__problems__problem__japanese
-          =tango.question
-        .body__problems__problem__english
-          =tango.anser
-.footer
+  .body__main
+    = render "shared/bodyMainHead"
+    .body__main__contents
+      .body__main__contents__index
+        登録した単語をフラッシュで覚えよう！
+        %br
+        #timer 5
+        -@tangos.each do |tango|
+          .body__main__contents__index__problems
+            .body__main__contents__index__problems__japanese
+              =tango.question
+            .body__main__contents__index__problems__english
+              =tango.anser

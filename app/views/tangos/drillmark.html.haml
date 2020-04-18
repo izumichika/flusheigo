@@ -1,11 +1,16 @@
 .body
-  .body__problems
-    -@ansers.each do |anser|
-      .body__problems__problem
-        .body__problems__problem__japanese
-          =anser[:quiz].question
-        .body__problems__problem__english
-          =anser[:quiz].anser
-        .body__problems__problem__result
-          =anser[:right] ? " 💮" : "×"
-.footer
+  .body__main
+    = render "shared/bodyMainHead"
+    .body__main__contents
+      .body__main__contents__index
+        わからなかった単語はお気に入り登録しよう！
+        %br  
+        %br  
+        -@ansers.each do |anser|
+          .body__main__contents__index__problems
+            .body__main__contents__index__problems__japanese
+              =anser[:quiz].question
+            .body__main__contents__index__problems__english
+              =anser[:quiz].anser
+            .body__main__contents__index__problems__result
+              =anser[:right] ? " 💮" : "×"

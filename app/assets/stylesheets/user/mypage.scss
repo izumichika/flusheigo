@@ -21,6 +21,7 @@
       font-family: "游ゴシック","arial unicode ms",sans-serif;
       width: 200px;
       &__jinput {
+        color: white;
         border: none;
         background-color: transparent;
       }
@@ -32,6 +33,7 @@
       width: 200px;
       text-decoration: underline;
       &__einput {
+        color: white;
         border: none;
         background-color: transparent;
       }
@@ -39,11 +41,25 @@
   }
 }
 .body__main__contents__index {
-
+  #timer {
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    border-radius: 50%;
+    background:#996633;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
   &__problems {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    font-size: 20px;
     &__japanese {
       border-bottom: solid 1px white;
       font-family: "游ゴシック","arial unicode ms",sans-serif;
@@ -54,6 +70,12 @@
       border-bottom: solid 1px white;
       font-family: "游ゴシック","arial unicode ms",sans-serif;
       width: 200px;
+    }
+    &__result {
+      margin-left: 20px;
+      width: 35px;
+      font-size: 25px;
+      font-weight: bold;
     }
     &__option {
       top:10px;
@@ -81,7 +103,21 @@
   a {
     text-decoration: none;
     color: white;
-    // display: block;
+
+    &:hover {
+      background: lightgray;
+    }
+  }
+}
+.body__main__contents__drill {
+  font-size: 25px;
+  margin-top: 5px;
+  width: 150px;
+  border: medium solid white;
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
     &:hover {
       background: lightgray;
     }

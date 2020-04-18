@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   controller :tangos do
     resources :tangos, only: [:create, :destroy] do
       collection do
+        get 'drillnew', to: "tangos#drillnew"
         get 'drilltest', to: "tangos#drilltest"
         post 'drillmark', to: "tangos#drillmark"
       end

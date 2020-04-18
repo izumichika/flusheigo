@@ -15,6 +15,9 @@ class TangosController < ApplicationController
     @tangos = Tango.where(user_id: current_user.id).sample(5)
   end
 
+  def drillnew
+  end
+
   def drilltest
     @quizzes = Drill1.all
   end

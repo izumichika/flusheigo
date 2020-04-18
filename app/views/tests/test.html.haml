@@ -1,15 +1,18 @@
 .body
-  .body__problems
-    .body__problems__problem
-      %h 単語テスト わからない単語を復習しよう！
-    =form_tag mark_tests_path do
-      -@quizzes.each do |quiz|
-        .body__problems__problem
-          .body__problems__problem__japanese
-            =quiz.question
-          .body__problems__problem__english
-            =hidden_field_tag  "quiz[]", quiz.id
-            =text_field_tag "quiz#{quiz.id}","",autocomplete: 'off', placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput"
-      .body__problems__problem__submit
-        =submit_tag "回答", class: "btn"
-.footer
+  .body__main
+    = render "shared/bodyMainHead"
+    .body__main__contents
+      .body__main__contents__index
+        登録した単語を10問ランダムに出題！
+        %br  
+        %br  
+        =form_tag mark_tests_path do
+          -@quizzes.each do |quiz|
+            .body__main__contents__index__problems
+              .body__main__contents__index__problems__japanese
+                =quiz.question
+              .body__main__contents__index__problems__english
+                =hidden_field_tag  "quiz[]", quiz.id
+                =text_field_tag "quiz#{quiz.id}","",autocomplete: 'off', placeholder: "英単語", size: "20x20", class: "body__main__contents__register__problems__english__einput"
+          =submit_tag "回答", class: "btn"
+

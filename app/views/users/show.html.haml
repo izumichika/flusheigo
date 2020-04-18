@@ -31,34 +31,3 @@
         ページ数
         = paginate @tangos
         = page_entries_info @tangos
--# .body
--#   .body__mypage
--#     .body__mypage__left
--#     .body__mypage__right
--#       .body__mypage__right__contents
--#         .body__mypage__right__contents__problems
--#           .body__mypage__right__contents__problems__search
-            -# = search_form_for @q, url:root_path do |f|
-            -#   = f.label :anser_cont, '答え'
-            -#   = f.search_field :anser_cont
-            -#   = f.submit "検索"
--#           %h.body__mypage__right__contents__problems__direction
--#             My単語を登録
--#             = form_with(model: @tango, local: true) do |form|
--#               .body__mypage__right__contents__problems__problem
--#                 .body__mypage__right__contents__problems__problem__japanese
--#                   = form.text_field :question, placeholder: "単語", size: "10x10", class: "body__problems__problem__japanese__jinput"
--#                 .body__mypage__right__contents__problems__problem__english
--#                   = form.text_field :anser, placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput"
--#                 = form.submit "作成"
--#           - @tangos.each do |tango|
--#             .body__mypage__right__contents__problems__problem
--#               .body__mypage__right__contents__problems__problem__option
--#                 = link_to "削除", "/tangos/#{tango.id}", method: :delete
--#               .body__mypage__right__contents__problems__problem__japanese
--#                 = tango.question
--#               .body__mypage__right__contents__problems__problem__english
--#                 = tango.anser
--#           .body__mypage__right__contents__problems
--#             = paginate @tangos
--#             = page_entries_info @tangos

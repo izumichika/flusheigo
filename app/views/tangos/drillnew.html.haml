@@ -1,0 +1,16 @@
+.body
+  .body__main
+    = render "shared/bodyMainHead"
+    .body__main__contents
+      ドリルにチャレンジして新しい単語を覚えよう！
+      .body__main__contents__drill
+        = link_to "ドリル１", drilltest_tangos_path(current_user)
+      .body__main__contents__drill
+        ドリル２
+      .body__main__contents__drill
+        ドリル３
+      .body__main__contents__drill
+        ドリル４
+      .body__main__contents__drill
+        ドリル５
+
