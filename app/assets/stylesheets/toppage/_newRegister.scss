@@ -1,9 +1,7 @@
-.body__newRegister {
-  width: 100%;
+.body__main__newRegister {
+  width: 800px;
   color: white;
   text-align: center;
-  padding-top: 10px;
-  height: 250px;
   h1 {
     font-weight: bold;
     font-size: 25px;
@@ -11,9 +9,8 @@
   &__form {
     display: inline-block;
     justify-content: center;
-    height: 200px;
+    height: 100px;
     &__field {
-      // line-height: 100px;
       height: 30px;
       display: flex;
       flex-direction: row;
@@ -21,7 +18,6 @@
       padding-bottom: 30px;
       &__input {
         height: 50px;
-        width: 300px;
       }
       &__action {
         text-align: center;

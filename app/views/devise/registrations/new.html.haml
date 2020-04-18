@@ -1,46 +1,41 @@
 .body
   .body__main
-    %h1 MY英単語とは？
-    %p もっと英語の勉強をとっかかりやすく！をテーマに作成した英単語学習WEBアプリです<br>
-    %p 学生時代にあったらよかったなと思う機能を盛り込みました！
-  .body__newRegister
-    %h1 さっそく登録して色んな機能を試してみよう！<br>
-    .body__newRegister__form
-      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-        .body__newRegister__form__field
-          = render "devise/shared/error_messages", resource: resource
-        .body__newRegister__form__field
-          .body__newRegister__form__field__input
-            = f.email_field :email, autofocus: true, autocomplete: "email",style: "width:300px; height:40px;", placeholder: "メールアドレス"
-          .body__newRegister__form__field__input
-            = f.password_field :password, autocomplete: "new-password",style: "width:300px; height:40px;", placeholder: "パスワード"
-          .body__newRegister__form__field__input
-            = f.password_field :password_confirmation, autocomplete: "new-password",style: "width:300px; height:40px;", placeholder: "再入力"
-          .body__newRegister__form__field__action
-            = f.submit "新規登録", class: 'button'
-
-  .body__description
-    .body__description__contents--drill
-      =link_to drilltest_tangos_path do
-        %p2 英単語ドリルお試しでドリルにTRY！
-        .body__description__contents__gif
-          = image_tag '/drill.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
-    .body__description__contents
-      わからない英単語をMY単語に登録
-      .body__description__contents__gif
+    .body__main__description
+      %h1 MY英単語とは？
+      %p もっと英語の勉強をとっかかりやすく！をテーマに作成した英単語学習WEB<br>アプリです<br>
+      %p 学生時代にあったらよかったなと思う機能を盛り込みました！
+    .body__main__newRegister
+      %h1 さっそく登録して色んな機能を試してみよう！<br>
+      .body__main__newRegister__form
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          .body__main__newRegister__form__field
+            = render "devise/shared/error_messages", resource: resource
+          .body__main__newRegister__form__field
+            .body__main__newRegister__form__field__input
+              = f.email_field :email, autofocus: true, autocomplete: "email",style: "width:200px; height:40px;", placeholder: "メールアドレス"
+            .body__main__newRegister__form__field__input
+              = f.password_field :password, autocomplete: "new-password",style: "width:200px; height:40px;", placeholder: "パスワード"
+            .body__main__newRegister__form__field__input
+              = f.password_field :password_confirmation, autocomplete: "new-password",style: "width:200px; height:40px;", placeholder: "再入力"
+            .body__main__newRegister__form__field__action
+              = f.submit "新規登録", class: 'button'
+    .body__main__contents
+      .body__main__contents__content
+        英単語ドリルお試しでドリルにTRY！
+        %br
+        = image_tag '/drill.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
+      .body__main__contents__content
+        わからない英単語をMY単語に登録
+        %br
         = image_tag '/newtango.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
-    .body__description__contents
-      登録した単語はフラッシュで覚えよう！
-      .body__description__contents__gif
+      .body__main__contents__content
+        登録した単語はフラッシュで覚えよう！
+        %br
         = image_tag '/flush.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
-    .body__description__contents
-      登録したMY単語をテストで確認
-      .body__description__contents__gif
+      .body__main__contents__content
+        登録したMY単語をテストで確認
+        %br
         = image_tag '/test.gif', alt: '単語登録', height: '110', width: '220', class: 'gif'
-    .body__description__contents
-      And more ...
-      .body__description__contents__gif
+      .body__main__contents__content
+        And more ...
 
-
-.footer
-  英単語問題集は「神戸大学石川慎一郎研究室 – 語彙研究 JEV (Junior High School Level English Vocabulary）1200」より作成
