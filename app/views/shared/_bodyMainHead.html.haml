@@ -1,0 +1,10 @@
+.body__main__head
+  .body__main__head__function
+    = link_to "ドリル", drilltest_tangos_path(current_user)
+  .body__main__head__function
+    = link_to "フラッシュ", flush_tangos_path(current_user)
+  .body__main__head__function
+    = link_to "テスト", test_tests_path(current_user)
+  .body__main__head__function
+    .body__main__head__function--mypage
+      = link_to "マイページ", user_path(current_user)

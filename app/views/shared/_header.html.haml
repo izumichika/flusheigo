@@ -2,5 +2,11 @@
   %h.header__title
     MY単語
   .header__right
-    .header__right__start
-      = link_to "マイページ", "/"
+    - if user_signed_in?
+      .header__right__link
+        =link_to "マイページ", user_path(current_user)
+      .header__right__link
+        =link_to "ログアウト", destroy_user_session_path, method: :delete 
+    - else
+      .header__right__link
+        = link_to "ログイン", new_session_path(resource_name)

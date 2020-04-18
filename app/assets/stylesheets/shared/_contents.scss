@@ -1,0 +1,46 @@
+.body__main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  &__head {
+    display: flex;
+    height: 50px;
+    &__function {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: lightgray;
+      a {
+        font-size: 25px;
+        text-align: center;
+        display:block;
+        height: 50px;
+        width: 200px;
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+    }
+    &__function--mypage {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background    : #a60; 
+    }
+    &__function:hover {
+      color         : #000066;  
+      background    : #a60;  
+    }
+  }
+  &__contents {
+    color: #fff;
+    background-color: #114400;
+    padding: 15px;
+    padding-left: 20px;
+    border: 9px solid #a60;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 2px 4px #666, 2px 2px 2px #111 inset;
+    text-shadow: 0px 0px 2px #000;
+    line-height: 1.9;
+  }
+}

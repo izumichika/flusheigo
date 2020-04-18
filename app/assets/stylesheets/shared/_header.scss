@@ -10,32 +10,31 @@
   margin: 0 auto;
   background-image: image-url('chizu.jpg');
   background-size: 100%;
-  padding: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
-  align-items     : center;
-  justify-content: center;
   &__title {
+    line-height: 50px;
     font-size: 20px;
     margin-right: 20px;
   }
   &__right {
-    height: 50px;
-    width: 400px;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     a {
       text-decoration: none;
       color: white;
       display: block;
     }
-    &__start {
-      height: 50px;
+    &__link {
+      border-radius : 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
       width: 100px;
-      line-height: 50px;
-      border-radius: 3px;
-      background-color: slategrey;
-      font-size: 15px;
-      font-weight: bold;
+      font-size: 15px bold;
       &:hover {
         background: gold;
       }

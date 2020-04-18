@@ -1,124 +1,89 @@
-.body__mypage {
-  display: flex;
-  &__left {
-    width: 200px;
-    height: 70vh;
-    color: #fff;
-    background-color: #114400;
-    padding: 15px;
-    padding-left: 20px;
-    border: 9px solid #a60;
-    border-radius: 3px;
-    box-shadow: 2px 2px 4px #666, 2px 2px 2px #111 inset;
-    text-shadow: 0px 0px 2px #000;
-    line-height: 1.9;
-    margin-top: 30px;
-    &__contents {
-      height: 30px;
-      font-size: 20px;
+.body__main__contents__search {
+  height: 100px;
+  width: 600px;
+  &__tangoSearch {
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px white;
+  }
+}
+.body__main__contents__register {
+  margin-top: 20px;
+  height: 100px;
+  width: 600px;
+  &__problems {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    &__japanese {
+      border-bottom: solid 2px white;
+      font-family: "游ゴシック","arial unicode ms",sans-serif;
+      width: 200px;
+      &__jinput {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    &__english {
+      margin-left: 20px;
+      border-bottom: solid 2px white;
+      font-family: "游ゴシック","arial unicode ms",sans-serif;
+      width: 200px;
+      text-decoration: underline;
+      &__einput {
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.body__main__contents__index {
+
+  &__problems {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    &__japanese {
+      border-bottom: solid 1px white;
+      font-family: "游ゴシック","arial unicode ms",sans-serif;
+      width: 200px;
+    }
+    &__english {
+      margin-left: 20px;
+      border-bottom: solid 1px white;
+      font-family: "游ゴシック","arial unicode ms",sans-serif;
+      width: 200px;
+    }
+    &__option {
+      top:10px;
+      border-radius: 3px;
+      height: 20px;
+      line-height: 20px;
       text-align: center;
-      justify-content: center;
-      margin-top: 20px;
-      a{
-        text-decoration: none ;
-        color :#fff; 
+      width: 30px;
+      font-size: 10px;
+      margin-top: auto;
+      margin-bottom: auto;
+      a {
+        text-decoration: none;
+        color: white;
+        display: block;
         &:hover {
-          background: skyblue;
+          background: lightgray;
         }
       }
     }
   }
-  &__right {
-    width: 65%;
-    &__contents {
-      &__problems {
-        background-color: white;
-        width: 60%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        &__direction {
-          font-size: 20px;
-          padding-left: 10px;
-        }
-        &__problem {
-          height: 35px;
-          display: flex;
-          margin-top: 5px;
-          font-size: 15px;
-          background-color: white;
-          border-radius: 20px;
-          position: relative;
-          padding-left: 50px;
-          // padding-right: 100px;
-          margin-top: -5px;
-          line-height: 30px;
-          background: -webkit-linear-gradient(bottom, #000 1px, rgba(255, 255, 255, 0) 1px) left top / 1px 35px;
-          background: linear-gradient(to top, #000 1px, rgba(255, 255, 255, 0) 1px) left top / 1px 35px;
-          &__option {
-            position: absolute;
-            left: -40px;
-            top:10px;
-            border-radius: 3px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-            width: 30px;
-            font-size: 10px;
-            margin-top: auto;
-            margin-bottom: auto;
-            a {
-              text-decoration: none;
-              color: white;
-              display: block;
-              &:hover {
-                background: lightgray;
-              }
-            }
-          }
-          &__japanese {
-            font-family: "游ゴシック","arial unicode ms",sans-serif;
-            line-height: 50px;
-            width: 150px;
-            // background-color: pink;
-            text-align: center;
-            // margin-right: 10px;
-            &__jinput {
-              border: none;
-              background-color: transparent;
-            }
-          }
-          &__english {
-            font-family: "游ゴシック","arial unicode ms",sans-serif;
-            line-height: 50px;
-            margin-right: 10px;
-            margin-left: 50px;
-            width: 100px;
-            text-align: center;
-            position: relative;
-            &__einput {
-              border: none;
-              background-color: transparent;
-            }
-            &__btn {
-              position: absolute;
-              right:-80px;
-              top:7px;
-              height: 30px;
-              width: 50px;
-              line-height: 30px;
-              border-radius: 3px;
-              background-color: slategrey;
-              font-size: 10px;
-              font-weight: bold;
-              &:hover {
-                background: gold;
-              }
-            }
-          }
-        }
-      }
+}
+.body__main__contents__page {
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+    // display: block;
+    &:hover {
+      background: lightgray;
     }
   }
 }
