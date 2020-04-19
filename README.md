@@ -37,18 +37,18 @@ http://3.115.133.232/
 
 ### 各種機能の動作
 
-- 単語登録・削除<br>
-![MY単語登録](https://user-images.githubusercontent.com/61169243/79117005-db07b980-7dc4-11ea-89fa-df85ca4c5b2a.gif)
+- マイページ　単語登録・削除・検索・一覧ができます<br>
+![検索・登録・削除・一覧](https://user-images.githubusercontent.com/61169243/79688330-9e3a3780-8288-11ea-8726-186733d74a9e.gif)
 <br>
 
-- 単語テスト 自身が登録した英単語をテストできます<br>
-![単語テスト](https://user-images.githubusercontent.com/61169243/79117007-df33d700-7dc4-11ea-827f-3156fe654fbf.gif)
+- 単語テスト 登録した英単語をテストできます<br>
+![登録済みの単語をテスト](https://user-images.githubusercontent.com/61169243/79688447-5f58b180-8289-11ea-9420-1d50e766a6a2.gif)
 <br>
 
 - 単語フラッシュ 自身が登録した単語が５秒ごとに５個ずつランダムに表示されます<br>
-![フラッシュ](https://user-images.githubusercontent.com/61169243/79117017-e65ae500-7dc4-11ea-9a7c-d13d3dedfc1f.gif)
+![単語フラッシュ](https://user-images.githubusercontent.com/61169243/79688520-cb3b1a00-8289-11ea-8e62-2e08eaa72754.gif)
 <br>
 
 - 単語ドリル 英単語の問題集にチャレンジできます<br>
-![ドリル](https://user-images.githubusercontent.com/61169243/79117448-18207b80-7dc6-11ea-968b-383cdefb1ea7.gif)
+![ドリル](https://user-images.githubusercontent.com/61169243/79688795-ac3d8780-828b-11ea-946d-133dbb3f9219.gif)
 <br>
