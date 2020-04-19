@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   #   @tango = Tango.new
   # end
   def show
-    @q = current_user.tangos.ransack(params[:q])
+    @q = current_user.tangos.order(id: "DESC").ransack(params[:q])
     @tangos = @q.result(distinct: true).page(params[:page]).per(10)
     @tango = Tango.new
   end
