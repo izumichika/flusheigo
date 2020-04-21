@@ -4,4 +4,7 @@
   background-image: image-url('libra.jpg');
   background-size: 100%;
   overflow: scroll;
+  #error_explanation {
+    color: red;
+  }
 }
