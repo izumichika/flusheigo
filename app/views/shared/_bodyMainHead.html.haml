@@ -1,21 +1,21 @@
 .body__main__head
   .body__main__head__function
-    - if user_signed_in?
-      = link_to "ドリル", drillnew_tangos_path(current_user)
-    - else
-      = link_to "ドリル", drillnew_tangos_path
+    -# - if user_signed_in?
+    = link_to "ドリル", drillnew_tangos_path(current_user)
+    -# - else
+    -#   = link_to "ドリル", drillnew_tangos_path
   .body__main__head__function
-    - if user_signed_in?
-      = link_to "フラッシュ", flush_tangos_path(current_user)
-    - else
-      = link_to "フラッシュ", "#"
+    -# - if user_signed_in?
+    = link_to "フラッシュ", flush_tangos_path(current_user)
+    -# - else
+    -#   = link_to "フラッシュ", "#"
   .body__main__head__function
-    - if user_signed_in?
-      = link_to "テスト", test_tests_path(current_user)
-    - else
-      = link_to "テスト", "#"
+    -# - if user_signed_in?
+    = link_to "テスト", test_tests_path(current_user)
+    -# - else
+    -#   = link_to "テスト", "#"
   .body__main__head__function
-    - if user_signed_in?
-      = link_to "マイページ", user_path(current_user)
-    - else
-      = link_to "マイページ", "#"
+    -# - if user_signed_in?
+    = link_to "マイページ", user_path(current_user)
+    -# - else
+    -#   = link_to "マイページ", "#"

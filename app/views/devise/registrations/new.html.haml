@@ -14,7 +14,7 @@
             .body__main__newRegister__form__field__input
               = f.email_field :email, autofocus: true, autocomplete: "email",style: "width:200px; height:40px;", placeholder: "メールアドレス"
             .body__main__newRegister__form__field__input
-              = f.password_field :password, autocomplete: "new-password",style: "width:200px; height:40px;", placeholder: "パスワード"
+              = f.password_field :password, autocomplete: "new-password",style: "width:200px; height:40px;", placeholder: "パスワード(7文字以上)"
             .body__main__newRegister__form__field__input
               = f.password_field :password_confirmation, autocomplete: "new-password",style: "width:200px; height:40px;", placeholder: "再入力"
             .body__main__newRegister__form__field__action

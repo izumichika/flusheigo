@@ -13,7 +13,7 @@
         = form_with(model: @tango, local: true) do |form|
           .body__main__contents__register__problems
             .body__main__contents__register__problems__japanese
-              = form.text_field :question, placeholder: "単語", size: "20x20", class: "body__main__contents__register__problems__japanese__jinput"
+              = form.text_field :question, placeholder: "単語", size: "20x20", class: "body__main__contents__register__problems__japanese__jinput", id: "jinput"
             .body__main__contents__register__problems__english
               = form.text_field :anser, placeholder: "英単語", size: "20x20", class: "body__main__contents__register__problems__english__einput"
             = form.submit "作成"

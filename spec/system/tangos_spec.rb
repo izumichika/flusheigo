@@ -49,7 +49,7 @@ describe '単語管理機能', type: :system do
     let(:login_user) { user_a }
 
     before do
-      visit tangos_path
+      visit root_path
       fill_in "jinput", with: tango_question
       click_button '作成'
     end
@@ -64,7 +64,7 @@ describe '単語管理機能', type: :system do
       let(:tango_question) { '' }
 
       it '何も登録されずリダイレクト' do
-        visit tangos_path
+        visit root_path
       end
     end
   end
