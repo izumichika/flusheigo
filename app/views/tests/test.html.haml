@@ -14,5 +14,7 @@
               .body__main__contents__index__problems__english
                 =hidden_field_tag  "quiz[]", quiz.id
                 =text_field_tag "quiz#{quiz.id}","",autocomplete: 'off', placeholder: "英単語", size: "20x20", class: "body__main__contents__register__problems__english__einput"
-          =submit_tag "回答", class: "btn"
+          - if @quizzes.blank?
+          - else
+            =submit_tag "回答", class: "btn"
 
