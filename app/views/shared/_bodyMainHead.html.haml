@@ -5,15 +5,19 @@
     -# - else
     -#   = link_to "ドリル", drillnew_tangos_path
   .body__main__head__function
-    -# - if user_signed_in?
-    = link_to "フラッシュ", flush_tangos_path(current_user)
-    -# - else
-    -#   = link_to "フラッシュ", "#"
+    - if @tangos.blank?
+      %p1 フラッシュ
+      %br
+      %p2 （My単語を登録で利用できます）
+    - else
+      = link_to "フラッシュ", flush_tangos_path(current_user)
   .body__main__head__function
-    -# - if user_signed_in?
-    = link_to "テスト", test_tests_path(current_user)
-    -# - else
-    -#   = link_to "テスト", "#"
+    - if @tangos.blank?
+      %p1 テスト
+      %br
+      %p2 (My単語を登録で利用できます)
+    - else
+      = link_to "テスト", test_tests_path(current_user)
   .body__main__head__function
     -# - if user_signed_in?
     = link_to "マイページ", user_path(current_user)
