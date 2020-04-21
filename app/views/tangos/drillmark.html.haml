@@ -6,7 +6,7 @@
         わからなかった単語はお気に入り登録しよう！
         %br  
         %br  
-        -@tangos.each do |anser|
+        -@ansers.each do |anser|
           .body__main__contents__index__problems
             .body__main__contents__index__problems__japanese
               =anser[:quiz].question
@@ -14,3 +14,6 @@
               =anser[:quiz].anser
             .body__main__contents__index__problems__result
               =anser[:right] ? " 💮" : "×"
+    .body__main__hide
+      -@tangos.each do |anser|
+        =anser.question

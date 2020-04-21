@@ -7,7 +7,7 @@
         %br  
         %br  
       =form_tag drillmark_tangos_path do
-        -@tangos.each do |quiz|
+        -@quizzes.each do |quiz|
           .body__main__contents__index__problems
             .body__main__contents__index__problems__japanese
               =quiz.question
@@ -15,3 +15,6 @@
               =hidden_field_tag  "quiz[]", quiz.id
               =text_field_tag "quiz#{quiz.id}","",autocomplete: 'off', placeholder: "英単語", size: "20x20", class: "body__main__contents__register__problems__english__einput"
         =submit_tag "回答", class: "btn"
+    .body__main__hide
+      -@tangos.each do |anser|
+        =anser.question
