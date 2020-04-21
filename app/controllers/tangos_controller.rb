@@ -16,17 +16,23 @@ class TangosController < ApplicationController
   end
 
   def drillnew
+    @tangos = Tango.where(user_id: current_user.id)
   end
 
   def drilltest
-    @quizzes = Drill1.all
+    # @quizzes = Drill1.all
+    @tangos = Drill1.all
   end
 
   def drillmark
     quizzes = Drill1.find(params[:quiz])
-    @ansers = []
+    # @ansers = []
+    @tangos = []
+    # quizzes.each do |q|
+    #   @ansers << {quiz: q, right: q.anser?(params["quiz#{q.id}"])}
+    # end
     quizzes.each do |q|
-      @ansers << {quiz: q, right: q.anser?(params["quiz#{q.id}"])}
+      @tangos << {quiz: q, right: q.anser?(params["quiz#{q.id}"])}
     end
   end
   private

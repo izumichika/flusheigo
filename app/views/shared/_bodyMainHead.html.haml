@@ -1,9 +1,6 @@
 .body__main__head
   .body__main__head__function
-    -# - if user_signed_in?
     = link_to "ドリル", drillnew_tangos_path(current_user)
-    -# - else
-    -#   = link_to "ドリル", drillnew_tangos_path
   .body__main__head__function
     - if @tangos.blank?
       %p1 フラッシュ
@@ -19,7 +16,4 @@
     - else
       = link_to "テスト", test_tests_path(current_user)
   .body__main__head__function
-    -# - if user_signed_in?
     = link_to "マイページ", user_path(current_user)
-    -# - else
-    -#   = link_to "マイページ", "#"
