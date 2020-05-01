@@ -19,9 +19,8 @@ class TangosController < ApplicationController
     @tangos = Tango.where(user_id: current_user.id)
   end
 
-  def drilltest
+  def drill1test
     @quizzes = Drill1.all
-    # @tangos = Drill1.all
     @tangos = Tango.where(user_id: current_user.id)
   end
 
@@ -29,14 +28,12 @@ class TangosController < ApplicationController
     @tangos = Tango.where(user_id: current_user.id)
     quizzes = Drill1.find(params[:quiz])
     @ansers = []
-    # @tangos = []
     quizzes.each do |q|
       @ansers << {quiz: q, right: q.anser?(params["quiz#{q.id}"])}
     end
-    # quizzes.each do |q|
-    #   @tangos << {quiz: q, right: q.anser?(params["quiz#{q.id}"])}
-    # end
   end
+
+  
   private
   def tango_params
     params.require(:tango).permit(:question, :anser, :result).merge(user_id: current_user.id)
