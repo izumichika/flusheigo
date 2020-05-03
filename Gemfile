@@ -79,6 +79,7 @@ gem 'erb2haml'
 gem 'active_hash'
 gem 'kaminari'
 gem 'ransack'
+gem 'webpacker'
 
 group :production do
   gem 'unicorn', '5.4.1'
