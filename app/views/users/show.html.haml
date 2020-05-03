@@ -9,6 +9,7 @@
           = f.search_field :anser_cont, size: "20x20",class: "body__main__contents__search__tangoSearch", placeholder: "alphabet"
           = f.submit "検索"
       .body__main__contents__register
+        = react_component('HelloMessage', name: 'Mike')
         新しい単語を登録
         = form_with(model: @tango, local: true) do |form|
           .body__main__contents__register__problems
